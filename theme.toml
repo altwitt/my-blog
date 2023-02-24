@@ -9,5 +9,5 @@ features = ["security aware", "fast by default", "seo-ready", "development tools
 min_version = "0.81.0"
 
 [author]
-  name = "Mark Dumay"
-  homepage = "https://github.com/markdumay"
+  name = "Harrison Witt"
+  homepage = "https://github.com/altwitt"

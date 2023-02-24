@@ -1,5 +1,6 @@
 # toml-docs-start main
 [main]
+    titlePhoto = "/img/tlogo.jpg"
     separator = "-"
     description = "Hinode is a clean documentation and blog theme for your Hugo site based on Bootstrap 5."
     enableDarkMode = true
@@ -13,15 +14,16 @@
 
 # toml-docs-start home
 [home]
+    
     sections = ["blog", "projects"]
-    featurePhoto = "/img/sunrise.jpg" # source: https://unsplash.com/photos/ZX6BPboJrYk
+    featurePhoto = "/img/tron.png" # source: https://unsplash.com/photos/ZX6BPboJrYk
     fullCover = false
     style = ""
 # toml-docs-end home
 
 # toml-docs-start navigation
 [navigation]
-    logo = "/img/logo_icon.svg"
+    logo = "/img/logo2.svg"
     color = "body"
     fixed = true
     offset = "4em"
@@ -47,7 +49,7 @@
         homepage = 3
     [projects]
         title = "Projects"
-        sort = "title"
+        sort = "date"
         reverse = false
         cols = 1
         color = ""
@@ -83,28 +85,28 @@
 
 [schema]
     type = "Organization"
-    name = "Hinode"
+    name = "Techanimist"
     locale = "en-US"
-    # twitter = "https://twitter.com/gethinode"
+    # twitter = "https://twitter.com/hwitt2"
     # linkedIn = ""
-    github = "https://github.com/gethinode/hinode"
+    github = "https://github.com/altwitt"
     section = "blog"
     [author]
-        name = "Mark Dumay"
-        # twitter = "https://twitter.com/markdumay"
-        linkedin = "https://www.linkedin.com/in/markdumay/"
-        github = "https://github.com/markdumay"
+        name = "Harrison Witt"
+        # twitter = "https://twitter.com/hwitt2"
+        linkedin = "https://www.linkedin.com/in/harrisonawitt/"
+        github = "https://github.com/altwitt"
     [logo]
-        url = "img/logo512x512.png"
+        url = "img/logo.jpg"
         width = 512
         height = 512
     [image]
-        url = "img/logo1280x640.png"
+        url = "img/logo-long.jpg"
         width = 1280
         height = 640
 
 [opengraph]
-    images = ["logo.png"]
+    images = ["logo.jpg"]
     locale = "en_US"
 
 [comments]

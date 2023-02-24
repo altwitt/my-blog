@@ -1,12 +1,12 @@
 # toml-docs-start main
-title = "Hinode"
-copyright = "Copyright © 2023 Mark Dumay."
+title = "Techanimist"
+copyright = "Copyright © 2023 Harrison Witt."
 paginate = 9
 enableGitInfo = true
 # toml-docs-end main
 
 # additional settings
-baseURL = "https://demo.gethinode.com/"
+baseURL = "https://altwitt.github.io/"
 canonifyURLs = false
 enableEmoji = true
 enableRobotsTXT = true
@@ -29,29 +29,10 @@ defaultContentLanguageInSubdir = true
 [taxonomies]
   tag = 'tags'
 
-[privacy]
-  [privacy.vimeo]
-    disabled = false
-    simple = true
 
-  [privacy.twitter]
-    disabled = false
-    enableDNT = true
-    simple = true
+  
 
-  [privacy.instagram]
-    disabled = false
-    simple = true
-
-  [privacy.youtube]
-    disabled = false
-    privacyEnhanced = true
-
-[services]
-  [services.instagram]
-    disableInlineCSS = true
-  [services.twitter]
-    disableInlineCSS = true
+  
 
 [outputFormats]
   [outputFormats.XML]

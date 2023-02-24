@@ -1,6 +1,6 @@
 ---
-author: Mark Dumay
-title: Welcome to Hinode!
+author: Harrison Witt
+title: Techanimist
 ---
 
-A clean documentation and blog theme for your Hugo site based on Bootstrap 5.
+**For spatial data is nothing good or bad, but thinking maps it so.**

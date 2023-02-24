@@ -1,2 +1,17 @@
 // Placeholder to quickly add your own styles
 // The file is included last in the build pipeline
+
+.intro {
+  position: relative;
+  text-align: center;
+  margin: 20px;
+  font-size: 7.3rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: url(https://cdn11.bigcommerce.com/s-5luen2shhj/images/stencil/1280x1280/products/3331/24134/wo2-sat15-world-satellite-image-map-cloud-cover-framed__87533__04999.1675591183.jpg?c=2)
+    center;
+  background-size: 1920px 1080px;
+  background-repeat: no-repeat;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}

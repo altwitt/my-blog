@@ -64,8 +64,8 @@
     {{- end -}}
 {{- end -}}
 
-{{- $enableDarkMode := default true site.Params.main.enableDarkMode -}}
-{{- $enableLanguage := or $page.IsTranslated site.IsMultiLingual -}}
+<!-- {{- $enableDarkMode := default true site.Params.main.enableDarkMode -}}
+{{- $enableLanguage := or $page.IsTranslated site.IsMultiLingual -}} -->
 
 {{- $logo := site.Params.navigation.logo -}}
 {{- with .logo }}{{ $logo = . }}{{ end -}}
@@ -149,62 +149,7 @@
                 {{- end -}}
 
 
-                {{- if or $enableLanguage $enableDarkMode -}}
-                    <li class="nav-item py-2 py-md-1 col-12 col-md-auto">
-                        <div class="vr d-none d-md-flex h-100 mx-md-2"></div>
-                    </li>
-                {{- end -}}
-
-                <!-- Insert language switcher if applicable -->
-                {{- if $enableLanguage -}}
-                    {{- $currentLang := $page.Language.Lang -}}
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            {{- partial "assets/icon.html" (dict "icon" "fas globe") }} {{ T "languageSwitcherLabel" }}
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-end ">
-                            {{- if $page.IsTranslated -}}
-                                {{- range $page.AllTranslations -}}
-                                    <li><a class="dropdown-item {{ if eq .Language.Lang $currentLang }}active{{ end }}" href="{{ .Permalink }}">{{ .Language.LanguageName  }}</a></li>
-                                {{- end -}}
-                            {{- else -}}
-                                {{- range site.Languages -}}
-                                    <li><a class="dropdown-item" href="/{{ .Lang }}">{{ default .Lang .LanguageName }}</a></li>
-                                {{- end -}}
-                            {{- end -}}
-                        </ul>
-                    </li>
-                {{- end -}}
-                              
-                <!-- Insert color mode switcher -->
-                {{- if $enableDarkMode -}}
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="navbar-color-theme">
-                            {{- partial "assets/icon.html" (dict "icon" "fas sun theme-icon-active") }}
-                            <span class="d-md-none"></span>
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbar-color-theme">
-                            <li>
-                                <a class="dropdown-item" data-bs-theme-value="light" href="#!">
-                                    {{- partial "assets/icon.html" (dict "icon" "fas sun theme-icon") }}
-                                    {{ T "colorLight" }}
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" data-bs-theme-value="dark" href="#!">
-                                    {{- partial "assets/icon.html" (dict "icon" "fas moon theme-icon") }}
-                                    {{ T "colorDark" }}
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" data-bs-theme-value="auto" href="#!">
-                                    {{- partial "assets/icon.html" (dict "icon" "fas circle-half-stroke theme-icon" ) }}
-                                    {{ T "colorAuto" }}
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                {{- end -}}
+        
             </ul>
         </div>
     </div>
