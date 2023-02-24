@@ -4,7 +4,7 @@ title: Eerste artikel
 date: 2022-10-01
 description: Dit is mijn eerste artikel.
 tags: ["blog"]
-thumbnail: img/notepad.jpg
+thumbnail: img/mag.jpg
 photoCredits: <a href="https://unsplash.com/@frederickjmedina">Frederick Medina</a>
 photoSource: <a href="https://unsplash.com/photos/PdfRE-xB--s">Unsplash</a>
 ---

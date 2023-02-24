@@ -1,7 +1,7 @@
 {
-  "name": "@gethinode/hinode",
-  "version": "0.9.4",
-  "description": "Hinode is a clean documentation and blog theme for Hugo, an open-source static site generator",
+  "name": "techanimist",
+  "version": "0.1.0",
+  "description": "My bloogosphere",
   "keywords": [
     "hugo",
     "theme",
@@ -43,9 +43,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gethinode/hinode.git"
+    "url": "git+https://github.com/altwitt/my-blog.git"
   },
-  "author": "Mark Dumay",
+  "author": "Harrison Witt",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/gethinode/hinode/issues"
@@ -77,7 +77,5 @@
   "otherDependencies": {
     "hugo": "0.110.0"
   },
-  "dependencies": {
-    "gh": "^2.8.9"
-  }
+  "dependencies": {}
 }

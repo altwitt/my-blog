@@ -4,8 +4,8 @@ title: Tweede artikel
 date: 2022-11-01
 description: Dit is mijn tweede artikel.
 tags: ["blog"]
-thumbnail: img/phone.jpg # https://picsum.photos/id/160/3200/2119
-photoCredits: <a href="https://unsplash.com/@thomweerd">Thom</a> 
+thumbnail: img/lego.png # https://picsum.photos/id/160/3200/2119
+photoCredits: <a href="https://unsplash.com/@thomweerd">Thom</a>
 photoSource: <a href="https://unsplash.com/photos/Zdcq3iKly6g">Unsplash</a>
 ---
 

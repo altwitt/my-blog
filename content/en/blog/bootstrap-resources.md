@@ -122,9 +122,9 @@ As an example, the following shortcode displays a centered carousel with three s
 
 {{< example lang="hugo" >}}
 {{</* carousel ratio="16x9" class="col-sm-12 col-lg-8 mx-auto" */>}}
-{{</* img src="img/coffee.jpg" caption="slide 1" */>}}
-{{</* img src="img/phone.jpg" caption="slide 2" */>}}
-{{</* img src="img/dunes.jpg" caption="slide 3" */>}}
+{{</* img src="img/geopy.jpg" caption="slide 1" */>}}
+{{</* img src="img/delta.jpg" caption="slide 2" */>}}
+{{</* img src="img/layers.jpg" caption="slide 3" */>}}
 {{</* /carousel */>}}
 {{< /example >}}
 
@@ -210,7 +210,7 @@ As an example, the following shortcode displays an image with rounded corners an
 <!-- markdownlint-disable MD037 -->
 
 {{< example lang="hugo" >}}
-{{</* image src="img/flowers.jpg" ratio="21x9" caption="Figure caption" class="rounded" */>}}
+{{</* image src="img/mag.jpg" ratio="21x9" caption="Figure caption" class="rounded" */>}}
 {{< /example >}}
 
 <!-- markdownlint-enable MD037 -->
