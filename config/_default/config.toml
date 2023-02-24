@@ -1,0 +1,66 @@
+# toml-docs-start main
+title = "Techanimist"
+copyright = "Copyright © 2023 Harrison Witt."
+paginate = 9
+enableGitInfo = true
+# toml-docs-end main
+
+# additional settings
+baseURL = "https://altwitt.github.io/"
+canonifyURLs = false
+enableEmoji = true
+enableRobotsTXT = true
+enableInlineShortcodes = true
+
+# prevent build failures when using Hugo's Instagram shortcode due to deprecated Instagram API.
+# See https://github.com/gohugoio/hugo/issues/7228#issuecomment-714490456
+ignoreErrors = ["error-remote-getjson"]
+
+# toml-docs-start build
+timeout = "60s"
+# toml-docs-end build
+
+# toml-docs-start language
+languageCode = "en-us"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+# toml-docs-end language
+
+[taxonomies]
+  tag = 'tags'
+
+
+  
+
+  
+
+[outputFormats]
+  [outputFormats.XML]
+    isPlainText = false
+    mediaType = "application/xml"
+    isHtml = false
+    noUgly = true
+    permalinkable = false
+    name = "xml"
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.81.0"
+    max = ""
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "static"
+    target = "static"
+# toml-docs-start javascript
+  [[module.mounts]]
+    source = "node_modules/bootstrap/dist/js"
+    target = "assets/js/vendor/bootstrap"
+    includeFiles = "*.bundle.js"
+  [[module.mounts]]
+    source = "node_modules/flexsearch/dist"
+    target = "assets/js/vendor/flexsearch"
+    includeFiles = "*.bundle.js"
+# toml-docs-end javascript
